@@ -27,6 +27,11 @@ $(SHELL_PROGRAM):	$(SHELL_OBJECTS) $(LIB_STATIC)
 test:	$(SHELL_PROGRAM)
 	@for test_script in tests/test_*.sh; do $${test_script}; done
 
+reset:
+	git checkout data/image.5
+	git checkout data/image.20
+	git checkout data/image.200
+
 clean:
 	rm -f $(LIB_OBJECTS) $(LIB_STATIC) $(SHELL_OBJECTS) $(SHELL_PROGRAM)
 

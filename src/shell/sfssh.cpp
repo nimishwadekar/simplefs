@@ -49,6 +49,10 @@ int main(int argc, char *argv[]) {
     	return EXIT_FAILURE;
     }
 
+	/* do_format(disk, fs, 1, 0, 0);
+
+	exit(0); */
+
     while (true) {
 	char line[BUFSIZ], cmd[BUFSIZ], arg1[BUFSIZ], arg2[BUFSIZ];
 
